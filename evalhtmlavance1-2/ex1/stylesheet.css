@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* header */
+body{
+    background:linear-gradient(black, white);
+
+}
+main{
+    margin: 0 auto;
+    width: 70%;
+    background-color: white;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: 2px 2px 2px #888;
+    padding: 15px;
+}
+.main-header{
+    text-align: center;
+}
+h1{
+    color: #139c19;
+    text-shadow: -2px 2px 2px #000;
+    font-size: 60;
+    padding: 20px 0px;
+}
+.main-nav {
+    width: 100%;
+    background: linear-gradient(#444,#111);
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px #888;
+}
+.main-nav ul {
+    text-align: left;
+}
+
+.main-nav li {
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    color: #f2f2f2
+}
+.main-nav li:first-child{
+    margin-left: 20px;
+}
+.main-nav li:hover{
+    color: #fafafa;
+    background: linear-gradient(#19b123,#139c19);
+    text-shadow: 1px 1px 1px #000;
+}
+.main-nav li:hover:nth-child(2),.main-nav li:hover:nth-child(3){
+    box-shadow: -5px 5px #111;
+}
+.menu-dl .sous-menu-titre,
+.menu-dl .sous-menu {
+    display: none;
+    margin-top: 5px;
+}
+.main-nav li:hover .menu-dl,
+.main-nav li:hover .menu-dl img,
+.main-nav li:hover .menu-dl .sous-menu-titre,
+.main-nav li:hover .menu-dl .sous-menu {
+    display: block;
+}
+.menu-dl {
+    position: absolute;
+    top: 100%; /* Positionne le menu déroulant sous l'élément li parent */
+    left: 0;
+    display: none;
+    background: linear-gradient(#19b123, #139c19);
+    flex-direction: column;
+    width: 550px;
+    box-shadow: -5px 5px 0px #000;
+}
+.sous-menu-titre{
+    color: #000;
+}
+.sous-menu:hover{
+    color: #ededed;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.div-sous-menu{
+    display: table;
+    background: linear-gradient(#19b123, #139c19);
+}
+.div-sous-menu-titre, 
+.div-sous-menu-image{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+dt{
+    font-size: 24;
+}
+
+/* contenu */
+.main-contenu{
+    display: table;
+    padding: 5px;
+}
+
+.colone1, .colone2{
+    display:table-cell;
+    
+}
+.colone1{
+    width: 70%;
+    border-right: 40px solid #fff;
+    vertical-align: top;
+}
+.colone2{
+    width: 30%;
+    box-shadow: -3px 3px 3px #ccc;
+    vertical-align: bottom;
+}
+
+article{
+    width: 100%;
+    margin: 40px 0px 40px 0px;
+}
+article img{
+    width: 100%;
+    
+}
+.article1{
+    color: #777;
+    font-style: italic;
+}
+.article2 img{
+    margin: 20px;
+    padding-right: 10px;
+    display: block;
+    width: 50%;
+    float: left;
+}
+.article3{
+    clear: both;
+
+}
+.article3-columns-text {
+    display: table;
+    width: 100%;
+}
+
+.article3-columns-text > p {
+    display: table-cell;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-right: 1px solid #ccc; /* Ajoute une bordure à droite de la première colonne */
+}
+
+.article3-columns-text > p:first-child {
+    padding-right: 5px; /* Ajoute un espace entre les colonnes */
+}
+
+.article3-columns-text > p:last-child {
+    padding-left: 10px; /* Ajustement de la marge à gauche de la deuxième colonne */
+    border-right: none; /* Supprime la bordure à droite de la dernière colonne */
+}
+.article4, .article5{
+    height: 30%;
+}
+.article4 img, .article5 img{
+    height: fit-content;
+}
+
+h2{
+    font-size: 20;
+    font-weight: bolder;
+    color: #139c19;
+    padding: 10px;
+    margin: 10px 10px;
+    border-left:25px solid #139c19;
+    border-radius: 25px 0px 0px 25px;
+}
+h3{
+    font-size: 16;
+    font-weight: bolder;
+    color: #139c19;
+    padding: 20px 10px;
+}
+p{
+    font-size: medium;
+    text-align: justify;
+    margin: 10px 10px;
+}
+/* footer*/
+footer{
+    margin-top: 10px;
+    padding: 20px 0px;
+    border-top: 1px solid #139c19;
+    text-align: center;
+}
+footer a {
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #e9f6e9;
+    background: linear-gradient(#19b123, #139c19);
+}
+footer a:hover{
+    background: rgba(21, 165, 29, 0.5);
+    color: #000;
+}
